@@ -1,6 +1,10 @@
 html {
     box-sizing: border-box;
 }
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
 
 *,
 *::before,
@@ -50,7 +54,6 @@ li {
 
 .header__logo span {
     color: #000;
-    font-family: 'Lato', sans-serif;
     font-weight: 700;
 }
 
@@ -162,18 +165,45 @@ li {
     transition: all .3s;
 }
 
-.box .titel {
-    color: yellowgreen
+.slider {
+    background-color: #81e4ed;
+    padding: 20px 0px 10px;
 }
 
-h1 {
-    color: green;
+.slider__item {
+    background-image: url(../images/bacground1.jpg);
+    min-height: 440px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-h1 {
-    color: aqua;
+.slider__item-title {
+font-size: 50px;
+color: #fff;
+width: 300px;
+margin-left: 60px;
+font-weight: 700;
+padding-top: 90px;
 }
 
-.titel {
-    color: #000;
+.slick-dots li button {
+width: 14px;
+height: 14px;
+background-color: rgba(98, 98, 98, 0.5);
+border-radius: 50%;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #fff;
+}
+
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots li {
+    margin: 0px 9px;
+    width: auto;
+    height: auto;
 }
